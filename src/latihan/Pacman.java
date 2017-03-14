@@ -4,6 +4,7 @@ package latihan;
  *
  * @author richjuniadi
  */
+import java.util.Scanner;
 public class Pacman {
     
     private int x1,y1;
@@ -32,9 +33,11 @@ public class Pacman {
     }
     
     public void displayMessage(){
-        System.out.println("Jumlah Langkah" + langkah);
-        System.out.print("(w,a,s,d)>>  ");
-        System.out.println("poin : " + poin);
+	Scanner a = new Scanner(System.in);
+        System.out.println("Jumlah Langkah :" + langkah);
+        System.out.print("Masukan Langkah (w,a,s,d) :  ");
+	String s = a.nextLine();
+	System.out.println("poin : " + poin);
         System.out.println("=================================");
         setLangkah(s);
         setLangkah();
@@ -111,10 +114,6 @@ public class Pacman {
             peta[x1][y1] = 2;
         }
     }
-        
-    
-
-     
 }
     
     
