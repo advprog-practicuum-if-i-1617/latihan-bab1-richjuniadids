@@ -19,9 +19,9 @@ public static void main(String[] args)
                 pacman1.cekposisi();
                 pacman1.karakter();
                 pacman1.shift();
-                pacman1.displayMessage();
                 pacman1.poinLangkah();
-               }
+                pacman1.displayMessage();
+                }
             }
         }
     }    
